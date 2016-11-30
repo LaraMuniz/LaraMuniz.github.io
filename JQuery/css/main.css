@@ -1,0 +1,76 @@
+body{
+    height: 100%;
+    background: black;
+}
+
+html{
+    height: 100%;
+}
+
+div img{
+    width: 200%;
+    margin-left: -25%;
+    margin-top: -25%;
+}
+
+.envelope-img{
+    overflow: hidden;
+    border-radius: 7.5px;
+    height: 100%;
+}
+
+.envelope-txt img{
+    width: 30px;
+    height: 30px;
+}
+
+.trabalho{
+    height: 100%;
+    padding: 2px;
+}
+
+.trabalho:hover{
+    opacity: 0.7;
+}
+
+.trabalho .btn-ampliar {
+    display: inline-block;
+    width: 76px;
+    height: 76px;
+    background: url("../img/icone-lupa.svg") no-repeat center center;
+    background-size: 36px 36px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 10;
+    border: 3px solid #fff;
+    border-radius: 80px;
+    margin-left: -38px;
+    margin-top: -38px;
+    opacity: 1;
+    }
+
+.trabalho:hover .btn-ampliar {
+    opacity: 0.8;
+    margin-top: -38px;
+    
+}
+
+.trabalho .btn-ampliar span {
+    position: absolute !important;
+    height: 1px; width: 1px; 
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: polygon(0px 0px, 0px 0px,0px 0px, 0px 0px); 
+}
+
+.row{
+    height: 33.333333333%;
+}
+
+.container-fluid{
+    height: 100%;
+}
+
+

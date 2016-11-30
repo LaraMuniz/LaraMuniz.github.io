@@ -1,0 +1,190 @@
+body{
+    height: 100%;
+    background: #111111;
+    color: #FFF;
+}
+
+html{
+    height: 100%;
+}
+
+div img{
+    width: 200%;
+    margin-left: -25%;
+    margin-top: -25%;
+}
+
+.envelope-img{
+    overflow: hidden;
+    border-radius: 7.5px;
+    height: 100%;
+}
+
+.envelope-txt img{
+    width: 30px;
+    height: 30px;
+}
+.apresentacao {
+    display: table;
+    padding: 3px;
+    height: 100%;
+}
+.envelope-txts {
+    width: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+h1 {
+    display: inline-block;
+    width: 80%;
+    padding-bottom: 12px;
+    margin: 0;  
+    margin-bottom: 15px;    
+    border-bottom: 1px solid #2b2b2b;    
+    font-family: 'Poppins', sans-serif;
+    font-size: 5rem;
+    font-weight: 600;
+    opacity: 0.95;
+}
+h1 span {
+    font-weight: 100;
+}
+.apresentacao ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0;
+}
+.apresentacao li {
+    display: inline-block;
+}
+.apresentacao li:first-child {
+    margin-right: 15px;
+}
+.apresentacao a {
+    opacity: 0.6;
+}
+.apresentacao a:hover {
+    opacity: 0.9;
+}
+.apresentacao a img {
+    width: 30px;
+}
+.apresentacao a span {
+    position: absolute !important;
+    height: 1px; width: 1px; 
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: polygon(0px 0px, 0px 0px,0px 0px, 0px 0px); 
+}
+.trabalho{
+    height: 100%;
+    padding: 2px;
+    overflow: hidden;
+}
+
+.trabalho:hover a {
+    opacity: 0.75;
+}
+
+.trabalho .btn-ampliar {
+    display: inline-block;
+    width: 76px;
+    height: 76px;
+    background: url("../img/icone-lupa.svg") no-repeat center center;
+    background-size: 36px 36px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 10;
+    border: 3px solid #fff;
+    border-radius: 80px;
+    margin-left: -38px;
+    margin-top: 98px;
+    opacity: 0;
+    transition: opacity 0.3s, margin-top 0.5s;
+    transition-timing-function: ease;
+}
+
+.trabalho:hover .btn-ampliar {
+    opacity: 0.7;
+    margin-top: -38px;
+    
+}
+
+.trabalho .btn-ampliar span {
+    position: absolute;
+    height: 1px; width: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: polygon(0px 0px, 0px 0px,0px 0px, 0px 0px);
+}
+
+.row{
+    height: 33.333333333%;
+}
+
+.container-fluid{
+    height: 100%;
+}
+.trabalho {
+    opacity: 0;
+    animation-name: slideLR;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.row:nth-child(1) .trabalho:nth-child(3) {
+    animation-delay: 0s;
+}
+.row:nth-child(2) .trabalho:nth-child(3) {
+    animation-delay: 0.2s;
+}
+.row:nth-child(3) .trabalho:nth-child(3) {
+    animation-delay: 0.4s;
+}
+.row:nth-child(1) .trabalho:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.row:nth-child(2) .trabalho:nth-child(2) {
+    animation-delay: 0.4s;
+}
+.row:nth-child(3) .trabalho:nth-child(2) {
+    animation-delay: 0.6s;
+}
+.row:nth-child(2) .trabalho:nth-child(1) {
+    animation-delay: 0.6s;
+}
+.row:nth-child(3) .trabalho:nth-child(1) {
+    animation-delay: 0.8s;
+}
+@keyframes slideLR {
+    from {
+        left: -2000px;
+        opacity: 0;
+    }
+
+    to {
+        left: 0;
+        opacity: 1;
+    }
+}
+.apresentacao {
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-delay: 1.8s;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
