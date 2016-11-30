@@ -12,7 +12,7 @@ $( document ).ready(function() {
     
 	$('.volte').click (function(event){
         event.preventDefault();
-        $('html, body').animate({scrollTop: $('.Apresentacao').offset().top}, 900)
+        $('html, body').animate({scrollTop: $('.Apresentacao').offset().top}, 2000)
     })
     
     $('#sobre').click (function(event){
